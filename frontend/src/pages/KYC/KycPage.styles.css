@@ -1,0 +1,31 @@
+.kyc-page {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.kyc-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.kyc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.kyc-field input[type="file"] {
+  padding: 0.5rem 0.3rem;
+}
+
+.file-name {
+  font-size: 0.8rem;
+  color: var(--color-muted, #666);
+}
+
+.kyc-form button,
+.kyc-form .error,
+.kyc-form .positive {
+  grid-column: 1 / -1;
+}

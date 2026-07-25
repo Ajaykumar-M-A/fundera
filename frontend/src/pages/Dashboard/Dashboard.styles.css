@@ -1,0 +1,86 @@
+.status-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-color: var(--warning);
+}
+
+.status-banner h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.stock-search {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.stock-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.market-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.compact-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.compact-list a,
+.watchlist-row,
+.allocation-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.compact-list a {
+  color: var(--text);
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.watchlist-row {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.watchlist-row span,
+.notice-line {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.allocation-row {
+  margin-bottom: 0.65rem;
+}
+
+.allocation-row progress {
+  flex: 1;
+  min-width: 80px;
+  height: 0.65rem;
+  accent-color: var(--accent);
+}
+
+.warning {
+  color: var(--warning);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+  .status-banner,
+  .compact-list a,
+  .watchlist-row,
+  .allocation-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
